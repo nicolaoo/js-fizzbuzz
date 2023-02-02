@@ -7,13 +7,24 @@ console.log('ciao tutti')
 // Per i numeri che sono sia multipli di 3 che di 5 stampi (quindi multipli di 15) “FizzBuzz”.
 
 
-for ( let i = 1; i < 101; i++ ){
+for ( let i = 1; i <= 100; i++ ){
 
     let restoTre = i % 3
-    console.log(restoTre ,i)
+    // console.log('tre', i)
 
-    if (restoTre === 0 ) {
-       console.log (restoTre, 'Fizz')
-    }
+    let restoCinque = i % 5
+    // console.log(i, restoCinque)
+
+    let restoQuindici = i % 15
+
     
+    
+    if (restoQuindici === 0 ) {
+        console.log(i, 'Fizz' + 'Buzz')
+    } else if (restoCinque === 0) {
+        console.log(i, 'Buzz')
+    } else if (restoTre === 0) {
+        console.log(i, 'Fizz')
+    }
+
 }
