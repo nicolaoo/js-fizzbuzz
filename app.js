@@ -5,3 +5,8 @@ console.log('ciao tutti')
 // ma che per i multipli di 3 stampi “Fizz” al posto del numero
 // e per i multipli di 5 stampi “Buzz”.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi (quindi multipli di 15) “FizzBuzz”.
+
+
+for ( let i = 1; i < 101; i++ ){
+    console.log(i)
+}
