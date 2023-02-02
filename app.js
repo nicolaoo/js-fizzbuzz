@@ -6,6 +6,11 @@ console.log('ciao tutti')
 // e per i multipli di 5 stampi “Buzz”.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi (quindi multipli di 15) “FizzBuzz”.
 
+let cicloElement = document.querySelector('ciclo')
+console.log(cicloElement)
+
+
+
 
 for ( let i = 1; i <= 100; i++ ){
 
@@ -17,8 +22,6 @@ for ( let i = 1; i <= 100; i++ ){
 
     let restoQuindici = i % 15
 
-    
-    
     if (restoQuindici === 0 ) {
         console.log(i, 'Fizz' + 'Buzz')
     } else if (restoCinque === 0) {
@@ -26,5 +29,7 @@ for ( let i = 1; i <= 100; i++ ){
     } else if (restoTre === 0) {
         console.log(i, 'Fizz')
     }
-
+    
+    cicloElement.innerHTML = i
 }
+
