@@ -8,5 +8,12 @@ console.log('ciao tutti')
 
 
 for ( let i = 1; i < 101; i++ ){
-    console.log(i)
+
+    let restoTre = i % 3
+    console.log(restoTre ,i)
+
+    if (restoTre === 0 ) {
+       console.log (restoTre, 'Fizz')
+    }
+    
 }
